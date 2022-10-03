@@ -1,0 +1,14 @@
+1. [APIController] 
+
+=> we are not required to metion in the parameter [FromBody], where we are getting data
+ApiController Attribute handles it.
+
+=> ApiController will NOT work if data is comming from BODY(Postman/Client) and it is not in a single object
+ex. string username,string password in the BODY will not be recognized. Rather Object need to be used which container username and pass.
+
+=> Do validation of Models using Attributes : [Requied] etc.
+
+2. SingleOrDefault Vs. FirstOrDefault
+
+=> SingleOrDefault also throw expection rest same
+
